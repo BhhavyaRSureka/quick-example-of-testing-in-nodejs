@@ -37,3 +37,5 @@ function printLine(required, text){
     if(required){ console.log((String.fromCharCode(10004)+" "+text).green);}
     else{console.log((String.fromCharCode(10006)+" "+text).red);}
 }
+
+exports.printLine = printLine;

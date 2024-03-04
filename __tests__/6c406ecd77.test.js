@@ -9,7 +9,7 @@ ROOST_METHOD_SIG_HASH=6c406ecd77
 */
 
 // ********RoostGPT********
-const helloWeather = require('./weather-kit-test');
+const helloWeather = require('../test/weather-kit-test');
 
 describe('weather kit module', () => {
   let monday, tuesday, wednesday, thursday, friday;

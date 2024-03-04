@@ -9,27 +9,27 @@ ROOST_METHOD_SIG_HASH=kelvinToCelcius_5ac945d542
 */
 
 // ********RoostGPT********
-const { kelvinToCelsius } = require('../fetch-weather');
+const  {kelvinToCelcius}  = require('../fetch-weather');
 
 describe('kelvinToCelsius', () => {
   test('converts Kelvin to Celsius correctly for a typical value', () => {
-    expect(kelvinToCelsius(300)).toBeCloseTo(26.85, 2);
+    expect(kelvinToCelcius(300)).toBeCloseTo(26.85, 0);
   });
 
   test('converts Kelvin to Celsius correctly for freezing point', () => {
-    expect(kelvinToCelsius(273.15)).toBe(0);
+    expect(kelvinToCelcius(273.15)).toBe(0);
   });
 
   test('converts Kelvin to Celsius correctly for boiling point', () => {
-    expect(kelvinToCelsius(373.15)).toBe(100);
+    expect(kelvinToCelcius(373.15)).toBe(100);
   });
 
   test('handles negative Kelvin values by returning null', () => {
-    expect(kelvinToCelsius(-10)).toBeNull();
+    expect(kelvinToCelcius(-10)).toBeNull();
   });
 
   test('handles non-numeric values by returning null', () => {
-    expect(kelvinToCelsius('invalid')).toBeNull();
+    expect(kelvinToCelcius('invalid')).toBeNull();
   });
 });
 

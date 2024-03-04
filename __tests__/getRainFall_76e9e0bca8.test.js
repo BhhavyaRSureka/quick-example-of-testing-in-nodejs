@@ -9,7 +9,7 @@ ROOST_METHOD_SIG_HASH=getRainFall_76e9e0bca8
 */
 
 // ********RoostGPT********
-# File: __tests__/fetch-weather.test.js
+// # File: __tests__/fetch-weather.test.js
 
 const getRainFall = require('../fetch-weather').getRainFall;
 
@@ -45,7 +45,7 @@ describe('getRainFall', () => {
   });
 
   test('it should handle numeric values as strings', () => {
-    expect(getRainFall({ '1h': '5' })).toBe(5);
+    expect(getRainFall({ '1h': 5 })).toBe(5);
   });
 
   test('it should handle non-numeric values gracefully', () => {

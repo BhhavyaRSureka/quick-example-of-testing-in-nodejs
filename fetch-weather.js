@@ -39,3 +39,6 @@ function getRainFall(rainObj){
 }
 
 exports.fetchWeather = fetchWeather;
+exports.getRainFall = getRainFall;
+exports.kelvinToCelcius = kelvinToCelcius;
+exports.processResults = processResults;

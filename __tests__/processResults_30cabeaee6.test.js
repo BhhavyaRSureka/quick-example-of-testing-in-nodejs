@@ -9,8 +9,8 @@ ROOST_METHOD_SIG_HASH=processResults_30cabeaee6
 */
 
 // ********RoostGPT********
-jest.mock('./fetch-weather', () => {
-  const originalModule = jest.requireActual('./fetch-weather');
+jest.mock('../fetch-weather', () => {
+  const originalModule = jest.requireActual('../fetch-weather');
 
   // Mock the specific methods used in tests
   return {
@@ -20,7 +20,7 @@ jest.mock('./fetch-weather', () => {
   };
 });
 
-const { processResults, kelvinToCelcius, getRainFall } = require('./fetch-weather');
+const { processResults, kelvinToCelcius, getRainFall } = require('../fetch-weather');
 
 describe('processResults', () => {
 
