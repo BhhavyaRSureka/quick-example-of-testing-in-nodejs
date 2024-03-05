@@ -9,7 +9,7 @@ ROOST_METHOD_SIG_HASH=getRainFall_76e9e0bca8
 */
 
 // ********RoostGPT********
-import { describe, it, expect, beforeEach, afterEach } from '@jest/globals';
+const { describe, it, expect, beforeEach, afterEach } = require('@jest/globals');
 const getRainFall = require('../fetch-weather').getRainFall; // Adjust relative path as necessary
 
 describe('getRainFall Function', () => {

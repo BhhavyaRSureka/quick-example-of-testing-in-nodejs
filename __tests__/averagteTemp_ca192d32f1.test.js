@@ -10,7 +10,7 @@ ROOST_METHOD_SIG_HASH=averagteTemp_ca192d32f1
 
 // ********RoostGPT********
 const { describe, it, expect, beforeEach, afterEach } = require('@jest/globals');
-const { averageTemp } = require('../prepared-for-the-weather');
+const { averagteTemp } = require('../prepared-for-the-weather');
 
 describe('averageTemp', function() {
   // Set up any required preconditions here
@@ -25,27 +25,27 @@ describe('averageTemp', function() {
 
   // Test cases
   it('should correctly calculate the average temperature for positive numbers', function() {
-    expect(averageTemp(20, 30)).toBe(25);
+    expect(averagteTemp(20, 30)).toBe(25);
   });
 
   it('should correctly calculate the average temperature for negative numbers', function() {
-    expect(averageTemp(-10, -20)).toBe(-15);
+    expect(averagteTemp(-10, -20)).toBe(-15);
   });
 
   it('should handle decimal temperatures correctly', function() {
-    expect(averageTemp(20.5, 30.3)).toBeCloseTo(25.4);
+    expect(averagteTemp(20.5, 30.3)).toBeCloseTo(25.4);
   });
 
   it('should return a number', function() {
-    expect(typeof averageTemp(10, 20)).toBe('number');
+    expect(typeof averagteTemp(10, 20)).toBe('number');
   });
 
   it('should return NaN when the input is not a number', function() {
-    expect(averageTemp('hot', 'cold')).toBeNaN();
+    expect(averagteTemp('hot', 'cold')).toBeNaN();
   });
 
   it('should return NaN when one of the inputs is not a number', function() {
-    expect(averageTemp(10, 'cold')).toBeNaN();
+    expect(averagteTemp(10, 'cold')).toBeNaN();
   });
 
   // Add more test cases as required

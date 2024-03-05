@@ -42,13 +42,13 @@ const { processResults } = require('../fetch-weather');
 
   test('should calculate rainfall correctly', () => {
     const results = processResults(allResults);
-    expect(results.rainfall).toBe(5);
+    expect(results.rainFall).toBe(5);
   });
 
   test('should handle missing rain data', () => {
     delete allResults.rain; // Simulate missing data
     const results = processResults(allResults);
-    expect(results.rainfall).toBe(0);
+    expect(results.rainFall).toBe(0);
   });
 
   test('should retrieve cloud cover percentage', () => {
@@ -59,5 +59,5 @@ const { processResults } = require('../fetch-weather');
   afterAll(() => {
     // Clean up if needed
   });
-});
+// });
 
