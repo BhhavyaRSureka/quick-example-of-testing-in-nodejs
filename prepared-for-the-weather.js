@@ -24,7 +24,9 @@ function averagteTemp(min, max){
     return min + max / 2;
 }
 
-module.exports.doINeed = {
+module.exports = {
+  averagteTemp: averagteTemp,
+  doINeed: {
 
     /**
      * Do I need an umbrella today? Return true if:
@@ -64,5 +66,5 @@ module.exports.doINeed = {
     water    : function(weather){
         return true;
     }
-
+  }
 };
