@@ -21,7 +21,7 @@
  * @returns {*}
  */
 function averagteTemp(min, max){
-    return min + max / 2;
+    return (min + max) / 2;
 }
 
 module.exports = {
